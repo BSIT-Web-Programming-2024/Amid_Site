@@ -1,6 +1,11 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
-
+window.addEventListener("load", () => {
+    const splashScreen = document.getElementById("splash-screen");
+    setTimeout(() => {
+        splashScreen.classList.add("hidden");
+    }, 5000);
+});
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
